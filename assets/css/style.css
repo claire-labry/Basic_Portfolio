@@ -2,8 +2,7 @@ body{
     background-image: url("/Users/clairelabry/Desktop/Class/Basic_Portfolio/assets/images/blue-snow.png");
     background-color: #ffffff;
     font-family: 'Georgia', Times New Roman, Times, serif;
-    font-size: 12px;
-    line-height: 1.5;
+    font-size: 13px;
     padding: 0;
     margin: 0; 
 }
@@ -18,21 +17,23 @@ body{
 header{
     background-color:#ffffff;
     color: #777777;
-    padding-top: 30px;
-    min-height: 70px;
+    width:100%;
+    font-size:30px;
+    display: inline-block;
     border-bottom:#cccccc 2px solid;
+    margin:0px;
 } 
 
-header h1{
+header p{
+    float: left;
     background-color: #4aaaa4;
-    color: #ffffff;
-    margin-bottom: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 20px;
     padding-right: 20px;  
     width: fit-content;
-
+    color:#ffffff;
+    margin: 10px 10px 0; 
 }
 
 header a{
@@ -66,9 +67,181 @@ header a:hover{
 
 /* Section */
 
+section .container{
+    background-color: #ffffff;
+    width: 960px;
+    padding: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
 section h2{
     color:#4aaaa4;
-    border-bottom: #dddddd 2px solid;
     background-color: #ffffff;
+    border-bottom: #dddddd 2px solid;
+    padding: 5px;
+}
+img.displayed {
+    float:left;
+    display: block;
+   text-align: center;
+}
 
+img:hover{
+    transform: scaleX(-1);
+}
+section p{
+    color: #777777;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 14px;
+}
+p.blocktext {
+   text-align: center;
+}
+
+/* Boxes */
+
+.box{
+   float: right;
+   width: 30%;
+   padding: 10px;
+   position: relative;
+    text-align:center;
+   color: #ffffff;
+}
+.box-hangman{
+    background-image: url("../images/hangman.jpg");
+    width: 200px;
+    height: 150px;
+    margin: 25px;
+    position: absolute;
+    left: 15px;
+}
+.box-hangman p{
+    background-color: #4aaaa4;
+    font-family: 'Georgia', Times New Roman, Times, serif;
+    color: #ffffff;
+    position: absolute;
+    text-align: center;
+    height: 25px;
+    width: 200px;
+    padding: 5px 0;
+    
+}
+
+.box-rpggame{
+    background-image: url("../images/rpggame.jpg");
+    width:200px;
+    height:150px;
+    margin: 25px;
+    position: absolute;
+    left: 250px;
+}
+  .box-rpggame p{
+    background-color: #4aaaa4;
+    font-family: 'Georgia', Times New Roman, Times, serif;
+    color: #ffffff;
+    position: absolute;
+    text-align: center;
+    height: 25px;
+    width: 200px;
+    padding: 5px 0;
+  }  
+.box-triviagame{
+    background-image: url("../images/triviagame.jpeg");
+    width:200px;
+    height:150px;
+    margin: 25px;
+    position: absolute;
+    left: 15px;
+    top: 375px;
+    }
+.box-triviagame p{
+    background-color: #4aaaa4;
+    font-family: 'Georgia', Times New Roman, Times, serif;
+    color: #ffffff;
+    position: absolute;
+    text-align: center;
+    height: 25px;
+    width: 200px;
+    padding: 5px 0;
+}
+.box-rutgerinfowidget{
+    background-image: url("../images/rutgerinfowidget.jpeg");
+    width: 200px;
+    height: 150px;
+    margin: 25px;
+    position: absolute;
+    left: 250px;
+    top: 375px;
+}
+
+.box-rutgerinfowidget p{
+    background-color: #4aaaa4;
+    font-family: 'Georgia', Times New Roman, Times, serif;
+    color: #ffffff;
+    position: absolute;
+    text-align: center;
+    height: 25px;
+    width: 200px;
+    padding: 5px 0;
+}
+.box-rockpaperscissors{
+     background-image: url("../images/rockpaperscissors.jpg");
+     width:200px;
+     height:150px;
+     margin: 25px;
+    position: absolute;
+    left: 15px;
+    top: 545px;
+}
+
+.box-rockpaperscissors p{
+    background-color: #4aaaa4;
+    font-family: 'Georgia', Times New Roman, Times, serif;
+    color: #ffffff;
+    position: absolute;
+    text-align: center;
+    height: 25px;
+    width: 200px;
+    padding: 5px 0;
+}
+
+/*Form*/
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+.button_1{
+    background-color: #4aaaa4;
+    color:#ffffff;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 15px;
+}
+/* Footer */
+footer{
+    color: #ffffff;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    background-color: #666666;
+    border-top: #4aaaa4 5px solid;
+    text-align: center;
+    position: fixed;
+    width:100%;
+    top:auto;
+    bottom:0px;
 }
